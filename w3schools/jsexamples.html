@@ -54,12 +54,18 @@
         <button type="button" onclick='changeParaBodyFunction()'>Change Paragraph</button>
         <p>*************************************************************</p>
     </div>
+    <div>
+        <p>8. External Javascript</p>
+        <p id='changeParaExternal'>A Paragraph. Change my content</p>
+        <button type="button" onclick='changeParaExternalFunction()'>Change Paragraph</button>
+        <p>*************************************************************</p>
+    </div>
     <script>
-        function changeParaBodyFunction()
-        {
-           document.getElementById('changeParaBody').innerHTML="Paragraph changed from Body script";
+        function changeParaBodyFunction() {
+            document.getElementById('changeParaBody').innerHTML = "Paragraph changed from Body script";
         }
     </script>
+    <script src="jsExamples.js"></script>
 </body>
 
 </html>
