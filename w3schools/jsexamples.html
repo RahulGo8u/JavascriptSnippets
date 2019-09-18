@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <script>
+        function changeParaHeadFunction() {
+            document.getElementById('changeParaHead').innerHTML = "Paragraph Changed from header script.";
+        }
+    </script>
+</head>
+
 <body>
     <h2>What Can JavaScript Do?</h2>
     <div>
@@ -29,6 +37,29 @@
         <button type="button" onclick='document.getElementById("hide").style.display="none"'>Hide Element</button>
         <p>*************************************************************</p>
     </div>
+    <div>
+        <p>5. Show Hidden Element</p>
+        <button type="button" onclick='document.getElementById("hide").style.display="block"'>Show Element</button>
+        <p>*************************************************************</p>
+    </div>
+    <div>
+        <p>6. Javascript in Head</p>
+        <p id='changeParaHead'>A Paragraph. Change my content</p>
+        <button type="button" onclick='changeParaHeadFunction()'>Change Paragraph</button>
+        <p>*************************************************************</p>
+    </div>
+    <div>
+        <p>7. Javascript in Body</p>
+        <p id='changeParaBody'>A Paragraph. Change my content</p>
+        <button type="button" onclick='changeParaBodyFunction()'>Change Paragraph</button>
+        <p>*************************************************************</p>
+    </div>
+    <script>
+        function changeParaBodyFunction()
+        {
+           document.getElementById('changeParaBody').innerHTML="Paragraph changed from Body script";
+        }
+    </script>
 </body>
 
 </html>
